@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolme News Template</title>
+    <link rel="icon" type="x-icon" href="images/Logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/canvas.css">
+    <link rel="stylesheet" href="css/bolme.css">
+    <link rel="stylesheet" href="css/footer.css">
+    
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header Start -->    
+        <header>
+            <div class="header_top">
+                <div class="center">
+                    <div class="logo_and_search clear_fix">
+                        <a href="#" class="logo">
+                            <img src="images/Logo.jpg" alt="">
+                        </a>
+                        <div class="search_container">
+                            <form action="/action_page.php">
+                            <input type="text" placeholder="Поиск..." name="search">
+                            <button type="submit" class="button_icon"></button>
+                            </form>
+                        </div>
+                        <div class="social_media_icons">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="images/fb.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/ins.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/teleg.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/yt.jpg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="lent_item">
+                                <a href="https://www.youtube.com/watch?v=00G_VvHsL0E" class="icon_lenta"></a>
+                                <span>Лента</span>
+                            </div>
+                            <div class="dark_theme">
+                                <div class="import_label">
+                                    <h2 class="dark_title">Ночная тема</h2>
+                                </div>
+                                <div class="import_btn">
+                                    <input type="checkbox" name="dark" class="dark_check">
+                                    <div class="slider_btn btn_import"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="header_bottom clear_fix">
+                <div class="center">
+                    <nav class="navigation_bar">
+                        <a href="#" class="logo_mob">
+                            <img src="images/Logomobile.png" alt="">
+                        </a>
+                        <div class="mob_flex">
+                            <a href="#" class="search_mobile">
+                                <img src="images/searchimob.png" alt="">
+                            </a>
+                            <button id="button-menu" class="menu_mobile" style="background-color: transparent; border:none; cursor: pointer;">
+                                <img src="images/menu_res.svg" alt="">
+                            </button>
+                            
+                        </div>
+                        <ul>
+                            <li><a href="https://azculture.az/">Хроника</a></li>
+                            <li><a href="https://azculture.az/">Политика</a></li>
+                            <li><a href="https://azculture.az/">Экономика</a></li>
+                            <li><a href="https://azculture.az/">Общество</a></li>
+                            <li><a href="https://azculture.az/">Культура</a></li>
+                            <li><a href="https://azculture.az/">Спорт</a></li>
+                            <li><a href="https://azculture.az/">Дата</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="canvas_mobile hide">
+                <div class="canvas_top">
+                    <div class="canvas_logo">
+                        <a href="#" class="canvas_logo.inside">
+                            <img src="images/Logomobile.png" alt="#">
+                        </a> 
+                    </div>
+                    <div class="canvas_search_close">
+                        <a href="#" class="canvas_search">
+                            <img src="images/searchimob.png" alt="">
+                        </a>
+                        <button class="canvas_close" style="background-color: transparent; border:none; cursor: pointer;">
+                            <img src="images/close.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="canvas_bottom">
+                    <div class="canvas_night_theme">
+                        <div class="night_theme">
+                            <div class="canvas_input">
+                                <input type="radio">
+                            </div>
+                            <span>Ночная тема</span>
+                            
+                        </div>
+                    </div>
+                    <nav class="canvas_nav">
+                        <ul>
+                            <li><a href="https://azculture.az/">Хроника</a></li>
+                            <li><a href="https://azculture.az/">Политика</a></li>
+                            <li><a href="https://azculture.az/">Экономика</a></li>
+                            <li><a href="https://azculture.az/">Общество и культура</a></li>
+                            <li><a href="https://azculture.az/">Спорт</a></li>
+                            <li><a href="https://azculture.az/">Мнение</a></li>
+                            <li><a href="https://azculture.az/">В мире</a></li>
+                        </ul>
+                    </nav>
+                    <div class="canvas_socials">
+                        <h2>Более:</h2>
+                      <ul>
+                        <li><a href="#"><img src="images/fb_nw.svg" alt="fb"></a></li>
+                        <li><a href="#"><img src="images/inswhite.svg" alt="ins"></a></li>
+                        <li><a href="#"><img src="images/telegwhite.svg" alt="teleg"></a></li>
+                        <li><a href="#"><img src="images/ytwhite.svg" alt="yt"></a></li>
+                      </ul>
+                    </div>
+                    <div class="canvas_lenta">
+                        <div>
+                            <img src="images/lentawhite.svg" alt="#">
+                            <span>Лента</span>
+                        </div>
+                        <div>
+                            <img src="images/printwhite.svg" alt="#">
+                            <span>Правила перепечатки</span>
+                        </div>
+                        <div>
+                            <img src="images/contactwhite.svg" alt="#">
+                            <span>Обратная связь</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header End -->
+
+        <!-- Main Start  -->
+            <main class="main_section">
+                <div class="center">
+                    <div class="main_sec_container">
+                        <div class="main_section_title">
+                            <h3>
+                                <strong>
+                                    Экономика
+                                    <span>
+                                        Новости
+                                    </span>
+                                </strong>
+                            </h3>
+                        </div>
+                        <div class="main_content_menu">
+                            <div class="content_menu">
+                                <ul>
+                                    <li><a class="write_border" href="https://posta.az/">Все</a></li>
+                                    <li><a href="https://posta.az/">Энергетика</a></li>
+                                    <li><a href="https://posta.az/">Инфраструктура</a></li>
+                                    <li><a href="https://posta.az/">Финансы</a></li>
+                                    <li><a href="https://posta.az/">Транспорт</a></li>
+                                    <li><a href="https://posta.az/">Коммуникации</a></li>
+                                    <li><a href="https://posta.az/">Туризм</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bakinsky_card">
+                            <div class="bakinsky_card_box">
+                                <a href="https://www.youtube.com/watch?v=K4NC7dmEtds" class="bakinsky_card_post">
+                                    <img src="images/thumbsmall20220813080343585.jpg" alt="">
+                                </a>
+                                <div class="bakinsky_card_background">
+                                    <div class="bakinsky_card_box_title">
+                                    <h2>Хроника</h2>
+                                </div>
+                                <div class="bakinsy_card_box_txnxx">
+                                    Президент Ильхам Алиев принял в Конье премьер-министра Палестины
+                                </div>
+                                <div class="bakinsy_card_date_time">
+                                    <span>11 августа, 2022</span>
+                                    <span>13:05</span>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="bakinsky_card_box">
+                                <a href="https://www.youtube.com/watch?v=K4NC7dmEtds" class="bakinsky_card_post">
+                                    <img src="images/thumb20220609031123106.jpg" alt="">
+                                </a>
+                                <div class="bakinsky_card_background">
+                                    <div class="bakinsky_card_box_title">
+                                    <h2>Спорт</h2>
+                                </div>
+                                <div class="bakinsy_card_box_txnxx">
+                                    Hulu выпустил трейлер сериала о боксере Майке Тайсоне
+                                </div>
+                                <div class="bakinsy_card_date_time">
+                                    <span>30 августа, 2022</span>
+                                    <span>16:05</span>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="bakinsky_card_box">
+                                <a href="https://www.youtube.com/watch?v=K4NC7dmEtds" class="bakinsky_card_post">
+                                    <img src="images/thumbsmall20220724041055431@2x.jpg" alt="">
+                                </a>
+                                <div class="bakinsky_card_background">
+                                    <div class="bakinsky_card_box_title">
+                                    <h2>В мире</h2>
+                                </div>
+                                <div class="bakinsy_card_box_txnxx">
+                                    ВОЗ: Жара стала причиной 1 700 предотвратимых смертей в Испании и Португалии
+                                </div>
+                                <div class="bakinsy_card_date_time">
+                                    <span>20 августа, 2025</span>
+                                    <span>20:05</span>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="bakinsky_card_box">
+                                <a href="https://www.youtube.com/watch?v=K4NC7dmEtds" class="bakinsky_card_post">
+                                    <img src="images/thumb20220813084305700@2x.jpg" alt="">
+                                </a>
+                                <div class="bakinsky_card_background">
+                                    <div class="bakinsky_card_box_title">
+                                    <h2>Общество и культура</h2>
+                                </div>
+                                <div class="bakinsy_card_box_txnxx">
+                                    Эхо войны в объективе фотохудожника
+                                </div>
+                                <div class="bakinsy_card_date_time">
+                                    <span>15 августа, 2023</span>
+                                    <span>15:05</span>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="bakinsky_card_box">
+                                <a href="https://www.youtube.com/watch?v=K4NC7dmEtds" class="bakinsky_card_post">
+                                    <img src="images/thumb20220804051710636.jpg" alt="">
+                                </a>
+                                <div class="bakinsky_card_background">
+                                    <div class="bakinsky_card_box_title">
+                                    <h2>Экономика</h2>
+                                </div>
+                                <div class="bakinsy_card_box_txnxx">
+                                    Операционные расходы по проекту «Шахдениз» составили 1,2 млрд долларов
+                                </div>
+                                <div class="bakinsy_card_date_time">
+                                    <span>11 августа, 2022</span>
+                                    <span>13:05</span>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="bakinsky_card_box">
+                                <a href="https://www.youtube.com/watch?v=K4NC7dmEtds" class="bakinsky_card_post">
+                                    <img src="images/thumbsmall20220810095224828.jpg" alt="">
+                                </a>
+                                <div class="bakinsky_card_background">
+                                    <div class="bakinsky_card_box_title">
+                                    <h2>Хроника</h2>
+                                </div>
+                                <div class="bakinsy_card_box_txnxx">
+                                    Президент Ильхам Алиев принял в Конье премьер-министра Палестины
+                                </div>
+                                <div class="bakinsy_card_date_time">
+                                    <span>11 августа, 2022</span>
+                                    <span>13:05</span>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="bakinsky_card_box">
+                                <a href="https://www.youtube.com/watch?v=K4NC7dmEtds" class="bakinsky_card_post">
+                                    <img src="images/biden pentagon 2021 afp.webp" alt="">
+                                </a>
+                                <div class="bakinsky_card_background">
+                                    <div class="bakinsky_card_box_title">
+                                    <h2>В мире</h2>
+                                </div>
+                                <div class="bakinsy_card_box_txnxx">
+                                    Президент Байден объявил имя нового пресс-секретаря Белого дома
+                                </div>
+                                <div class="bakinsy_card_date_time">
+                                    <span>11 августа, 2022</span>
+                                    <span>13:05</span>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="bakinsky_card_box">
+                                <a href="https://www.youtube.com/watch?v=K4NC7dmEtds" class="bakinsky_card_post">
+                                    <img src="images/maxresdefault.jpg" alt="">
+                                </a>
+                                <div class="bakinsky_card_background">
+                                    <div class="bakinsky_card_box_title">
+                                    <h2>В мире</h2>
+                                </div>
+                                <div class="bakinsy_card_box_txnxx">
+                                    NATO Secretary General with the 🇺🇸 US Secretary of State Antony J. Blinken, 09 SEP 2022
+                                </div>
+                                <div class="bakinsy_card_date_time">
+                                    <span>11 августа, 2022</span>
+                                    <span>13:05</span>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="bakinsky_card_box">
+                                <a href="https://www.youtube.com/watch?v=K4NC7dmEtds" class="bakinsky_card_post">
+                                    <img src="images/thumbsmall20220813080343585.jpg" alt="">
+                                </a>
+                                <div class="bakinsky_card_background">
+                                    <div class="bakinsky_card_box_title">
+                                    <h2>Хроника</h2>
+                                </div>
+                                <div class="bakinsy_card_box_txnxx">
+                                    Президент Ильхам Алиев принял в Конье премьер-министра Палестины
+                                </div>
+                                <div class="bakinsy_card_date_time">
+                                    <span>11 августа, 2022</span>
+                                    <span>13:05</span>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="bakinsky_card_box">
+                                <a href="https://www.youtube.com/watch?v=K4NC7dmEtds" class="bakinsky_card_post">
+                                    <img src="images/thumb20220609031123106.jpg" alt="">
+                                </a>
+                                <div class="bakinsky_card_background">
+                                    <div class="bakinsky_card_box_title">
+                                    <h2>Спорт</h2>
+                                </div>
+                                <div class="bakinsy_card_box_txnxx">
+                                    Hulu выпустил трейлер сериала о боксере Майке Тайсоне
+                                </div>
+                                <div class="bakinsy_card_date_time">
+                                    <span>30 августа, 2022</span>
+                                    <span>16:05</span>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="bakinsky_card_box">
+                                <a href="https://www.youtube.com/watch?v=K4NC7dmEtds" class="bakinsky_card_post">
+                                    <img src="images/thumbsmall20220724041055431@2x.jpg" alt="">
+                                </a>
+                                <div class="bakinsky_card_background">
+                                    <div class="bakinsky_card_box_title">
+                                    <h2>В мире</h2>
+                                </div>
+                                <div class="bakinsy_card_box_txnxx">
+                                    ВОЗ: Жара стала причиной 1 700 предотвратимых смертей в Испании и Португалии
+                                </div>
+                                <div class="bakinsy_card_date_time">
+                                    <span>20 августа, 2025</span>
+                                    <span>20:05</span>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="bakinsky_card_box">
+                                <a href="https://www.youtube.com/watch?v=K4NC7dmEtds" class="bakinsky_card_post">
+                                    <img src="images/thumb20220813084305700@2x.jpg" alt="">
+                                </a>
+                                <div class="bakinsky_card_background">
+                                    <div class="bakinsky_card_box_title">
+                                    <h2>Общество и культура</h2>
+                                </div>
+                                <div class="bakinsy_card_box_txnxx">
+                                    Эхо войны в объективе фотохудожника
+                                </div>
+                                <div class="bakinsy_card_date_time">
+                                    <span>15 августа, 2023</span>
+                                    <span>15:05</span>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="bakinsky_card_box">
+                                <a href="https://www.youtube.com/watch?v=K4NC7dmEtds" class="bakinsky_card_post">
+                                    <img src="images/thumb20220804051710636.jpg" alt="">
+                                </a>
+                                <div class="bakinsky_card_background">
+                                    <div class="bakinsky_card_box_title">
+                                    <h2>Экономика</h2>
+                                </div>
+                                <div class="bakinsy_card_box_txnxx">
+                                    Операционные расходы по проекту «Шахдениз» составили 1,2 млрд долларов
+                                </div>
+                                <div class="bakinsy_card_date_time">
+                                    <span>11 августа, 2022</span>
+                                    <span>13:05</span>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="bakinsky_card_box">
+                                <a href="https://www.youtube.com/watch?v=K4NC7dmEtds" class="bakinsky_card_post">
+                                    <img src="images/thumbsmall20220810095224828.jpg" alt="">
+                                </a>
+                                <div class="bakinsky_card_background">
+                                    <div class="bakinsky_card_box_title">
+                                    <h2>Хроника</h2>
+                                </div>
+                                <div class="bakinsy_card_box_txnxx">
+                                    Президент Ильхам Алиев принял в Конье премьер-министра Палестины
+                                </div>
+                                <div class="bakinsy_card_date_time">
+                                    <span>11 августа, 2022</span>
+                                    <span>13:05</span>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="bakinsky_card_box">
+                                <a href="https://www.youtube.com/watch?v=K4NC7dmEtds" class="bakinsky_card_post">
+                                    <img src="images/biden pentagon 2021 afp.webp" alt="">
+                                </a>
+                                <div class="bakinsky_card_background">
+                                    <div class="bakinsky_card_box_title">
+                                    <h2>В мире</h2>
+                                </div>
+                                <div class="bakinsy_card_box_txnxx">
+                                    Президент Байден объявил имя нового пресс-секретаря Белого дома
+                                </div>
+                                <div class="bakinsy_card_date_time">
+                                    <span>11 августа, 2022</span>
+                                    <span>13:05</span>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="bakinsky_card_box">
+                                <a href="https://www.youtube.com/watch?v=K4NC7dmEtds" class="bakinsky_card_post">
+                                    <img src="images/BVB-1.jpg" alt="">
+                                </a>
+                                <div class="bakinsky_card_background">
+                                    <div class="bakinsky_card_box_title">
+                                    <h2>В мире</h2>
+                                </div>
+                                <div class="bakinsy_card_box_txnxx">
+                                    NATO Secretary General with the 🇺🇸 US Secretary of State Antony J. Blinken, 09 SEP 2022
+                                </div>
+                                <div class="bakinsy_card_date_time">
+                                    <span>11 августа, 2022</span>
+                                    <span>13:05</span>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="bakinsky_card_box">
+                                <a href="https://www.youtube.com/watch?v=K4NC7dmEtds" class="bakinsky_card_post">
+                                    <img src="images/soccer-uefa-champions-league-final-borussia-dortmund-v-bayern-munich-G659E0.jpg" alt="">
+                                </a>
+                                <div class="bakinsky_card_background">
+                                    <div class="bakinsky_card_box_title">
+                                    <h2>Экономика</h2>
+                                </div>
+                                <div class="bakinsy_card_box_txnxx">
+                                    Операционные расходы по проекту «Шахдениз» составили 1,2 млрд долларов
+                                </div>
+                                <div class="bakinsy_card_date_time">
+                                    <span>11 августа, 2022</span>
+                                    <span>13:05</span>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="bakinsky_card_box">
+                                <a href="https://www.youtube.com/watch?v=K4NC7dmEtds" class="bakinsky_card_post">
+                                    <img src="images/614827d44e3fe110080a5d3b.webp" alt="">
+                                </a>
+                                <div class="bakinsky_card_background">
+                                    <div class="bakinsky_card_box_title">
+                                    <h2>Хроника</h2>
+                                </div>
+                                <div class="bakinsy_card_box_txnxx">
+                                    Президент Ильхам Алиев принял в Конье премьер-министра Палестины
+                                </div>
+                                <div class="bakinsy_card_date_time">
+                                    <span>11 августа, 2022</span>
+                                    <span>13:05</span>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="bakinsky_card_box">
+                                <a href="https://www.youtube.com/watch?v=K4NC7dmEtds" class="bakinsky_card_post">
+                                    <img src="images//5e850d5792e1910c5e2405e8.webp" alt="">
+                                </a>
+                                <div class="bakinsky_card_background">
+                                    <div class="bakinsky_card_box_title">
+                                    <h2>В мире</h2>
+                                </div>
+                                <div class="bakinsy_card_box_txnxx">
+                                    Президент Байден объявил имя нового пресс-секретаря Белого дома
+                                </div>
+                                <div class="bakinsy_card_date_time">
+                                    <span>11 августа, 2022</span>
+                                    <span>13:05</span>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="bakinsky_card_box">
+                                <a href="https://www.youtube.com/watch?v=K4NC7dmEtds" class="bakinsky_card_post">
+                                    <img src="images/107086293-1657295179802-gettyimages-1238976710-AFP_324K9X6.jpeg" alt="">
+                                </a>
+                                <div class="bakinsky_card_background">
+                                    <div class="bakinsky_card_box_title">
+                                    <h2>В мире</h2>
+                                </div>
+                                <div class="bakinsy_card_box_txnxx">
+                                    NATO Secretary General with the 🇺🇸 US Secretary of State Antony J. Blinken, 09 SEP 2022
+                                </div>
+                                <div class="bakinsy_card_date_time">
+                                    <span>11 августа, 2022</span>
+                                    <span>13:05</span>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="bakinsky_card_box">
+                                <a href="https://www.youtube.com/watch?v=K4NC7dmEtds" class="bakinsky_card_post">
+                                    <img src="images/NO7E5RAPWRICBKPOB4XHI7L63Q.jpg" alt="">
+                                </a>
+                                <div class="bakinsky_card_background">
+                                    <div class="bakinsky_card_box_title">
+                                    <h2>Экономика</h2>
+                                </div>
+                                <div class="bakinsy_card_box_txnxx">
+                                    Операционные расходы по проекту «Шахдениз» составили 1,2 млрд долларов
+                                </div>
+                                <div class="bakinsy_card_date_time">
+                                    <span>11 августа, 2022</span>
+                                    <span>13:05</span>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="bakinsky_card_box">
+                                <a href="https://www.youtube.com/watch?v=K4NC7dmEtds" class="bakinsky_card_post">
+                                    <img src="images/maxresdefault (1).jpg" alt="">
+                                </a>
+                                <div class="bakinsky_card_background">
+                                    <div class="bakinsky_card_box_title">
+                                    <h2>Хроника</h2>
+                                </div>
+                                <div class="bakinsy_card_box_txnxx">
+                                    Президент Ильхам Алиев принял в Конье премьер-министра Палестины
+                                </div>
+                                <div class="bakinsy_card_date_time">
+                                    <span>11 августа, 2022</span>
+                                    <span>13:05</span>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="bakinsky_card_box">
+                                <a href="https://www.youtube.com/watch?v=K4NC7dmEtds" class="bakinsky_card_post">
+                                    <img src="images/biden pentagon 2021 afp.webp" alt="">
+                                </a>
+                                <div class="bakinsky_card_background">
+                                    <div class="bakinsky_card_box_title">
+                                    <h2>В мире</h2>
+                                </div>
+                                <div class="bakinsy_card_box_txnxx">
+                                    Президент Байден объявил имя нового пресс-секретаря Белого дома
+                                </div>
+                                <div class="bakinsy_card_date_time">
+                                    <span>11 августа, 2022</span>
+                                    <span>13:05</span>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="bakinsky_card_box">
+                                <a href="https://www.youtube.com/watch?v=K4NC7dmEtds" class="bakinsky_card_post">
+                                    <img src="images/PA-16630525.jpg" alt="">
+                                </a>
+                                <div class="bakinsky_card_background">
+                                    <div class="bakinsky_card_box_title">
+                                    <h2>В мире</h2>
+                                </div>
+                                <div class="bakinsy_card_box_txnxx">
+                                    NATO Secretary General with the 🇺🇸 US Secretary of State Antony J. Blinken, 09 SEP 2022
+                                </div>
+                                <div class="bakinsy_card_date_time">
+                                    <span>11 августа, 2022</span>
+                                    <span>13:05</span>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagin_number">
+                            <div class="bakinsky_pagination">
+                                <div class="pagination_number">
+                                    <a class="active" href="#">1</a>
+                                    <a href="#">2</a>
+                                    <a href="#">3</a>
+                                    <a href="#">4</a>
+                                    <a href="#">5</a>
+                                    <a class="arrow" href="#">
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </main>
+        <!-- Main End -->
+
+
+        <!-- Section Footer Start  -->
+            <footer class="footer clear_fix">
+                <div class="center">
+                    <div class="footer_full clear_fix">
+                        <div class="footer_top clear_fix">
+                            <div class="logo_sect clear_fix">
+                                <a href="https://www.youtube.com/" class="footer_logo">
+                                    <div class="logo_image"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ftr_social clear_fix">
+                            <div class="ftr_scl_items">
+                                <ul class="socials ftr_social_icons clear_fix">
+                                    <li>
+                                        <a href="" class="social_icon icon_fb">
+                                            <span class="scl_icon"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="social_icon icon_ins">
+                                            <span class="scl_icon"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="social_icon icon_teleg">
+                                            <span class="scl_icon"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="social_icon icon_yt">
+                                            
+                                            <span class="scl_icon"></span>
+                                            <span class="icon_yt_text">Социальная сеть:</span>
+                                        </a>
+                                    </li>   
+                                </ul>
+                                <ul class="social_lenta">
+                                    <li>
+                                        <a href="https://www.youtube.com/">
+                                            <img src="images/lentawhite.svg" alt="">
+                                            <p>Лента</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/">
+                                            <img src="images/printwhite.svg" alt="">
+                                            <p>Правила перепечатки</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/">
+                                            <img src="images/contactwhite.svg" alt="">
+                                            <p>Обратная связь</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="footer_content clear_fix">
+                                    Любое использование материалов допускается только при соблюдении правил перепечатки и при наличии гиперссылки на www.br.az. Новости, аналитика, прогнозы и другие материалы, представленные на данном сайте, не являются офертой или рекомендацией к покупке или продаже каких-либо активов.
+                                </div>
+                                <div class="copywrite">
+                                    <div class="copy_left">
+                                        <div class="copy_left_text">Все права защищены © 2022 «Бакинский рабочий»</div>
+                                    </div>
+                                    <div class="copy_right">
+                                        <a href="litpark.az" class="footer_create">
+                                            <div class="footer_create_title">Сайт по</div>
+                                            <div class="footer_create_icon">
+                                                <img src="images/smlogowhite.png" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        <!-- Section Footer End -->
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

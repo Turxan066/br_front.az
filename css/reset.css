@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'Benzin';
+    src: url('../fonts/subset-Benzin-Bold.eot');
+    src: url('../fonts/subset-Benzin-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/subset-Benzin-Bold.woff2') format('woff2'),
+        url('../fonts/subset-Benzin-Bold.woff') format('woff'),
+        url('../fonts/subset-Benzin-Bold.ttf') format('truetype'),
+        url('../fonts/subset-Benzin-Bold.svg#Benzin-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brygada 1918';
+    src: url('../fonts/subset-Brygada1918-Bold.eot');
+    src: url('../fonts/subset-Brygada1918-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/subset-Brygada1918-Bold.woff2') format('woff2'),
+        url('../fonts/subset-Brygada1918-Bold.woff') format('woff'),
+        url('../fonts/subset-Brygada1918-Bold.ttf') format('truetype'),
+        url('../fonts/subset-Brygada1918-Bold.svg#Brygada1918-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/subset-Manrope-Medium.eot');
+    src: url('../fonts/subset-Manrope-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/subset-Manrope-Medium.woff2') format('woff2'),
+        url('../fonts/subset-Manrope-Medium.woff') format('woff'),
+        url('../fonts/subset-Manrope-Medium.ttf') format('truetype'),
+        url('../fonts/subset-Manrope-Medium.svg#Manrope-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/subset-Manrope-ExtraBold.eot');
+    src: url('../fonts/subset-Manrope-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/subset-Manrope-ExtraBold.woff2') format('woff2'),
+        url('../fonts/subset-Manrope-ExtraBold.woff') format('woff'),
+        url('../fonts/subset-Manrope-ExtraBold.ttf') format('truetype'),
+        url('../fonts/subset-Manrope-ExtraBold.svg#Manrope-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/subset-Manrope-Bold.eot');
+    src: url('../fonts/subset-Manrope-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/subset-Manrope-Bold.woff2') format('woff2'),
+        url('../fonts/subset-Manrope-Bold.woff') format('woff'),
+        url('../fonts/subset-Manrope-Bold.ttf') format('truetype'),
+        url('../fonts/subset-Manrope-Bold.svg#Manrope-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/subset-SFProDisplay-Medium.eot');
+    src: url('../fonts/subset-SFProDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/subset-SFProDisplay-Medium.woff2') format('woff2'),
+        url('../fonts/subset-SFProDisplay-Medium.woff') format('woff'),
+        url('../fonts/subset-SFProDisplay-Medium.ttf') format('truetype'),
+        url('../fonts/subset-SFProDisplay-Medium.svg#SFProDisplay-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.clear_fix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+

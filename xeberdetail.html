@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xeber Detail Template</title>
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" type="x-icon" href="images/Logo.jpg">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/xeber.css">
+    <link rel="stylesheet" href="css/footer.css"> 
+    <link rel="stylesheet" href="css/canvas.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+</head>
+<style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  </style>
+<body>
+<div class="wrapper">
+        <!-- Header Start -->    
+            <header>
+                <div class="header_top">
+                    <div class="center">
+                        <div class="logo_and_search clear_fix">
+                            <a href="#" class="logo">
+                                <img src="images/Logo.jpg" alt="">
+                            </a>
+                            <div class="search_container">
+                                <form action="/action_page.php">
+                                <input type="text" placeholder="Поиск..." name="search">
+                                <button type="submit" class="button_icon"></button>
+                                </form>
+                            </div>
+                            <div class="social_media_icons">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/fb.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/ins.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/teleg.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="images/yt.jpg" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="lent_item">
+                                    <a href="https://www.youtube.com/watch?v=00G_VvHsL0E" class="icon_lenta"></a>
+                                    <span>Лента</span>
+                                </div>
+                                <div class="dark_theme">
+                                    <div class="import_label">
+                                        <h2 class="dark_title">Ночная тема</h2>
+                                    </div>
+                                    <div class="import_btn">
+                                        <input type="checkbox" name="dark" class="dark_check">
+                                        <div class="slider_btn btn_import"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="header_bottom clear_fix">
+                    <div class="center">
+                        <nav class="navigation_bar">
+                            <a href="#" class="logo_mob">
+                                <img src="images/Logomobile.png" alt="">
+                            </a>
+                            <div class="mob_flex">
+                                <a href="#" class="search_mobile">
+                                    <img src="images/searchimob.png" alt="">
+                                </a>
+                                <button class="menu_mobile" style="background-color: transparent; border:none; cursor: pointer;">
+                                    <img src="images/menu_res.svg" alt="">
+                                </button>
+                                
+                            </div>
+                            <ul>
+                                <li><a href="https://azculture.az/">Хроника</a></li>
+                                <li><a href="https://azculture.az/">Политика</a></li>
+                                <li><a href="https://azculture.az/">Экономика</a></li>
+                                <li><a href="https://azculture.az/">Общество</a></li>
+                                <li><a href="https://azculture.az/">Культура</a></li>
+                                <li><a href="https://azculture.az/">Спорт</a></li>
+                                <li><a href="https://azculture.az/">Дата</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="canvas_mobile hide">
+                    <div class="canvas_top">
+                        <div class="canvas_logo">
+                            <a href="#" class="canvas_logo.inside">
+                                <img src="images/Logomobile.png" alt="#">
+                            </a> 
+                        </div>
+                        <div class="canvas_search_close">
+                            <a href="#" class="canvas_search">
+                                <img src="images/searchimob.png" alt="">
+                            </a>
+                            <button class="canvas_close" style="background-color: transparent; border:none; cursor: pointer;">
+                                <img src="images/close.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="canvas_bottom">
+                        <div class="canvas_night_theme">
+                            <div class="night_theme">
+                                <div class="canvas_input">
+                                    <input type="radio">
+                                </div>
+                                <span>Ночная тема</span>
+                                
+                            </div>
+                        </div>
+                        <nav class="canvas_nav">
+                            <ul>
+                                <li><a href="https://azculture.az/">Хроника</a></li>
+                                <li><a href="https://azculture.az/">Политика</a></li>
+                                <li><a href="https://azculture.az/">Экономика</a></li>
+                                <li><a href="https://azculture.az/">Общество и культура</a></li>
+                                <li><a href="https://azculture.az/">Спорт</a></li>
+                                <li><a href="https://azculture.az/">Мнение</a></li>
+                                <li><a href="https://azculture.az/">В мире</a></li>
+                            </ul>
+                        </nav>
+                        <div class="canvas_socials">
+                            <h2>Более:</h2>
+                        <ul>
+                            <li><a href="#"><img src="images/fb_nw.svg" alt="fb"></a></li>
+                            <li><a href="#"><img src="images/inswhite.svg" alt="ins"></a></li>
+                            <li><a href="#"><img src="images/telegwhite.svg" alt="teleg"></a></li>
+                            <li><a href="#"><img src="images/ytwhite.svg" alt="yt"></a></li>
+                        </ul>
+                        </div>
+                        <div class="canvas_lenta">
+                            <div>
+                                <img src="images/lentawhite.svg" alt="#">
+                                <span>Лента</span>
+                            </div>
+                            <div>
+                                <img src="images/printwhite.svg" alt="#">
+                                <span>Правила перепечатки</span>
+                            </div>
+                            <div>
+                                <img src="images/contactwhite.svg" alt="#">
+                                <span>Обратная связь</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        <!-- Header End -->
+
+        <!-- Main Content Start  -->
+            <main class="main clear_fix">
+                <div class="detail_body">
+                    <div class="center">
+                        <div class="detail_left clear_fix">
+                            <div class="detail_container">
+                                <div class="sect_header clear_fix">
+                                    <h2 class="sect_hd">В Конье состоялась торжественная церемония открытия</h2>
+                                    <div class="detail_category">
+                                        <div class="catg_info">Спорт</div>
+                                        <div class="catg_date">27 Сентябрь 2022 | 12:38</div>
+                                        <div class="catg_time">13:05</div>
+                                    </div>
+                                    <div class="detail_image"></div>
+                                    <div class="detail_text">
+                                        <p><strong>О возможностях отечественного гастротуризма в Италии</strong></p>
+
+                                        <p>При поддержке Государственного агентства по туризму с 25 по 26 сентября на гастрономическом фестивале Terra Madre Salone del Gusto, который проходил в Турине (Италия), были представлены возможности гастротуризма в Азербайджане, сообщили в агентстве.</p>
+
+                                        <p>При участии представителей Азербайджанского бюро туризма и Азербайджанского национального кулинарного центра на национальном стенде нашей страны на фестивале представлена информация о туристическом маршруте Slow Food по горам Большого Кавказа, внедрение модели Slow Food в гастрономическом туризме и шаги, предпринятые для защиты местного биоразнообразия.</p>
+
+                                        <p>На фестивале также представлены меню на основе каталога «Корабль вкуса».</p>
+
+                                        <p>В рамках мероприятия при участии главы Азербайджанского национального кулинарного центра Орхана Садыгова, генерального директора Бюро по туризму Азербайджана Флориана Зенгстшмида и директора брюссельского офиса международной организации Slow Food International Марты Мессы было подписано соглашение по сотрудничеству, направленному на постоянное развитие философии и элементов Slow Food в Азербайджане и расширение взаимных связей.</p>
+                                            <div class="swiper mySwiper">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <div class="detail_image_extra">
+                                                            <img src="images/vitaly-taranov-k1qFPrDsn6M-unsplash.jpg" alt="">
+                                                            <div class="detail_arrow_left">
+                                                                <img src="images/a.svg" alt="">
+                                                            </div>
+                                                            <div class="detail_arrow_right">
+                                                                <img src="images/aright.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="detail_image_extra">
+                                                            <img src="images/jorge-brito-VD42pkS4GgE-unsplash.jpg" alt="">
+                                                            <div class="detail_arrow_left">
+                                                                <img src="images/a.svg" alt="">
+                                                            </div>
+                                                            <div class="detail_arrow_right">
+                                                                <img src="images/aright.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="detail_image_extra">
+                                                            <img src="images/jessica-rockowitz-lMLG68e4wYk-unsplash.jpg" alt="">
+                                                            <div class="detail_arrow_left">
+                                                                <img src="images/a.svg" alt="">
+                                                            </div>
+                                                            <div class="detail_arrow_right">
+                                                                <img src="images/aright.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <p>На фестивале заведующая сектором управления гастрономическим туризмом Азербайджанского бюро туризма Сакина Аскерова провела семинар по национальному меню «Корабль вкуса».</p>
+
+                                        <p>На фестивале Terra Madre Salone del Gusto, который считается крупнейшим гастрономическим мероприятием в мире, были представлены 130 стран. Мероприятие с миллионом посетителей было организовано международной организацией Slow Food International при поддержке Министерства иностранных дел Италии.</p>        
+                                    </div>
+                                    <div class="blogers_sect clear_fix">
+                                        <div class="bloger_sect_img">
+                                            <img src="images/blogger1.png" alt="">
+                                        </div>
+                                        <div class="bloger_sect_content">
+                                            <div class="bloger_sect_name">Шахин Шахбазов</div>
+                                            <div class="bloger_sect_info">
+                                                Авторы
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bloger_social_container">
+                                    <div class="social_sect">
+                                        <div class="social_name">Поделиться новостью:</div>
+                                        <ul class="blogers_social_icons">
+                                            <li>
+                                                <a href="https://www.youtube.com/watch?v=RiMbKrExlfo">
+                                                    <img src="images/fb_nw.svg" alt="">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.youtube.com/watch?v=RiMbKrExlfo">
+                                                    <img src="images/wp.svg" alt="">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.youtube.com/watch?v=RiMbKrExlfo">
+                                                    <img src="images/twt.svg" alt="">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.youtube.com/watch?v=RiMbKrExlfo">
+                                                    <img src="images/tg.svg" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section_wrap wrap_sport">
+                                <div class="sport_header clear_fix">
+                                    <div class="sport_heading">
+                                        <a href="https://www.youtube.com/watch?v=HNxcvzPeaEA">
+                                            <div class="sport_title">Другие новости</div>
+                                            <div class="sport_extra">Новости</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="sport_body clear_fix">
+                                    <div class="row row_responsive">
+                                        <div class="sport_col clear_fix">
+                                            <div class="sport_col_image">
+                                                <img src="images/thumb20220811103915921.jpg" alt="">
+                                            </div>
+                                            <div class="sport_col_bg">
+                                                <div class="sport_odd_row">
+                                                    <div class="sport_col_bg_title">Хроника</div>
+                                                </div>
+                                                <div class="sport_odd_row">
+                                                    <div class="sport_col_bg_info">День памяти: Мы в долгу перед нашими шехидами и ветеранами за славную Победу, одержанную в Отечественной войне  </div>
+                                                </div>
+                                                <div class="sport_odd_row">
+                                                    <div class="sport_col_bg_date_time">
+                                                        <span>27 Сентябрь 2022</span>
+                                                        <span>11:52</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sport_col clear_fix">
+                                            <div class="sport_col_image">
+                                                <img src="images/thumbsmall20220721013844355.jpg" alt="">
+                                            </div>
+                                            <div class="sport_col_bg">
+                                                <div class="sport_odd_row">
+                                                    <div class="sport_col_bg_title">Хроника</div>
+                                                </div>
+                                                <div class="sport_odd_row">
+                                                    <div class="sport_col_bg_info">ЮНИСЕФ предупреждает о разрушительных последствиях засухи в Эфиопии</div>
+                                                </div>
+                                                <div class="sport_odd_row">
+                                                    <div class="sport_col_bg_date_time">
+                                                        <span>27 Сентябрь 2022</span>
+                                                        <span>11:52</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sport_col clear_fix">
+                                            <div class="sport_col_image">
+                                                <img src="images/thumb20220804051710636.jpg" alt="">
+                                            </div>
+                                            <div class="sport_col_bg">
+                                                <div class="sport_odd_row">
+                                                    <div class="sport_col_bg_title">Хроника</div>
+                                                </div>
+                                                <div class="sport_odd_row">
+                                                    <div class="sport_col_bg_info">Операционные расходы по проекту «Шахдениз» составили 1,2 млрд долларов</div>
+                                                </div>
+                                                <div class="sport_odd_row">
+                                                    <div class="sport_col_bg_date_time">
+                                                        <span>27 Сентябрь 2022</span>
+                                                        <span>11:52</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sport_col clear_fix">
+                                            <div class="sport_col_image">
+                                                <img src="images/thumb20220609031123106.jpg" alt="">
+                                            </div>
+                                            <div class="sport_col_bg">
+                                                <div class="sport_odd_row">
+                                                    <div class="sport_col_bg_title">Хроника</div>
+                                                </div>
+                                                <div class="sport_odd_row">
+                                                    <div class="sport_col_bg_info">Hulu выпустил трейлер сериала о боксере Майке Тайсоне</div>
+                                                </div>
+                                                <div class="sport_odd_row">
+                                                    <div class="sport_col_bg_date_time">
+                                                        <span>27 Сентябрь 2022</span>
+                                                        <span>11:52</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sport_col clear_fix">
+                                            <div class="sport_col_image">
+                                                <img src="images/thumb20220813084305700.jpg" alt="">
+                                            </div>
+                                            <div class="sport_col_bg">
+                                                <div class="sport_odd_row">
+                                                    <div class="sport_col_bg_title">Хроника</div>
+                                                </div>
+                                                <div class="sport_odd_row">
+                                                    <div class="sport_col_bg_info">Эхо войны в объективе фотохудожника</div>
+                                                </div>
+                                                <div class="sport_odd_row">
+                                                    <div class="sport_col_bg_date_time">
+                                                        <span>27 Сентябрь 2022</span>
+                                                        <span>11:52</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sport_col clear_fix">
+                                            <div class="sport_col_image">
+                                                <img src="images/thumbsmall20220506014133466.jpg" alt="">
+                                            </div>
+                                            <div class="sport_col_bg">
+                                                <div class="sport_odd_row">
+                                                    <div class="sport_col_bg_title">Хроника</div>
+                                                </div>
+                                                <div class="sport_odd_row">
+                                                    <div class="sport_col_bg_info">Президент Байден объявил имя нового пресс-секретаря Белого дома</div>
+                                                </div>
+                                                <div class="sport_odd_row">
+                                                    <div class="sport_col_bg_date_time">
+                                                        <span>27 Сентябрь 2022</span>
+                                                        <span>11:52</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail_right clear_fix">
+                            <div class="detail_right_red_theme">
+                                <div class="red_theme_flex">
+                                    <div class="red_theme_title">Тема дня</div>
+                                    <div class="red_theme_image">
+                                        <img src="images/thumb20220719120422706.png" alt="">
+                                    </div>
+                                    <div class="red_theme_content">В Конье состоялась торжественная церемония открытия</div>
+                                    <a href="https://www.youtube.com/" class="read_more">Читать</a>
+                                </div>
+                            </div>
+                            <div class="detail_right_red_theme">
+                                <div class="red_theme_flex">
+                                    <div class="red_theme_title">Выбор редакции</div>
+                                    <div class="red_theme_image">
+                                        <img src="images/thumb20220709114300401.png" alt="">
+                                    </div>
+                                    <div class="red_theme_content">ВНовая жизнь древнего Рамана</div>
+                                    <a href="https://www.youtube.com/" class="read_more">Читать</a>
+                                </div>
+                            </div>
+                            <div class="author_bloger">
+                                <div class="author_head">Авторы</div>
+                                <div class="author_body">
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.youtube.com/" class="author_list clear_fix">
+                                                <div class="author_img">
+                                                    <img src="images/Screenshot_1.png" alt="">
+                                                </div>
+                                                <div class="author_content">
+                                                    <div class="author_name">Test Muellif</div>
+                                                    <div class="author_info">Корабль вкуса</div>
+                                                </div>
+                                            </a>
+                                            <a href="https://www.youtube.com/" class="author_list clear_fix">
+                                                <div class="author_img">
+                                                    <img src="images/charles-dickens-photograph.png" alt="">
+                                                </div>
+                                                <div class="author_content">
+                                                    <div class="author_name">Test Muellif</div>
+                                                    <div class="author_info">Корабль вкуса</div>
+                                                </div>
+                                            </a>
+                                            <a href="https://www.youtube.com/" class="author_list clear_fix">
+                                                <div class="author_img">
+                                                    <img src="images/Screenshot_2.png" alt="">
+                                                </div>
+                                                <div class="author_content">
+                                                    <div class="author_name">Test Muellif</div>
+                                                    <div class="author_info">Корабль вкуса</div>
+                                                </div>
+                                            </a>
+                                            <a href="https://www.youtube.com/" class="author_list clear_fix">
+                                                <div class="author_img">
+                                                    <img src="images/f0cbd18af26fb3b3cd9f615b780fe776.png" alt="">
+                                                </div>
+                                                <div class="author_content">
+                                                    <div class="author_name">Test Muellif</div>
+                                                    <div class="author_info">Корабль вкуса</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="detail_lent clear_fix">
+                                <div class="detail_lent_header clear_fix">
+                                    <div class="detail_lent_heading">
+                                        <div class="detail_lent_title">Лента</div>
+                                        <a href="https://www.youtube.com/">
+                                            <div class="detail_lent_extra">Новости</div>
+                                            <div class="detail_lent_body">
+                                                <div class="detail_lent_bg">
+                                                    <div class="detail_lent_odd">
+                                                        <div class="detail_lent_titles">Хроника</div>
+                                                    </div>
+                                                    <div class="detail_lent_odd">
+                                                        <div class="detail_lent_textt">
+                                                            МИД Азербайджана: Армении необходимо прекратить имитацию переговоров, предпринять реальные, конструктивные шаги 
+                                                        </div>
+                                                        <div class="detail_lent_odd">
+                                                            <div class="detail_lent_date_time">
+                                                                <span>27 Сентябрь 2022</span>
+                                                                <span>12:19</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="detail_lent_bg">
+                                                    <div class="detail_lent_odd">
+                                                        <div class="detail_lent_titles">Хроника</div>
+                                                    </div>
+                                                    <div class="detail_lent_odd">
+                                                        <div class="detail_lent_textt">
+                                                            МИД Азербайджана: Армении необходимо прекратить имитацию переговоров, предпринять реальные, конструктивные шаги 
+                                                        </div>
+                                                        <div class="detail_lent_odd">
+                                                            <div class="detail_lent_date_time">
+                                                                <span>27 Сентябрь 2022</span>
+                                                                <span>12:19</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="detail_lent_bg">
+                                                    <div class="detail_lent_odd">
+                                                        <div class="detail_lent_titles">Хроника</div>
+                                                    </div>
+                                                    <div class="detail_lent_odd">
+                                                        <div class="detail_lent_textt">
+                                                            МИД Азербайджана: Армении необходимо прекратить имитацию переговоров, предпринять реальные, конструктивные шаги 
+                                                        </div>
+                                                        <div class="detail_lent_odd">
+                                                            <div class="detail_lent_date_time">
+                                                                <span>27 Сентябрь 2022</span>
+                                                                <span>12:19</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="detail_lent_bg">
+                                                    <div class="detail_lent_odd">
+                                                        <div class="detail_lent_titles">Хроника</div>
+                                                    </div>
+                                                    <div class="detail_lent_odd">
+                                                        <div class="detail_lent_textt">
+                                                            МИД Азербайджана: Армении необходимо прекратить имитацию переговоров, предпринять реальные, конструктивные шаги 
+                                                        </div>
+                                                        <div class="detail_lent_odd">
+                                                            <div class="detail_lent_date_time">
+                                                                <span>27 Сентябрь 2022</span>
+                                                                <span>12:19</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="detail_lent_bg">
+                                                    <div class="detail_lent_odd">
+                                                        <div class="detail_lent_titles">Хроника</div>
+                                                    </div>
+                                                    <div class="detail_lent_odd">
+                                                        <div class="detail_lent_textt">
+                                                            МИД Азербайджана: Армении необходимо прекратить имитацию переговоров, предпринять реальные, конструктивные шаги 
+                                                        </div>
+                                                        <div class="detail_lent_odd">
+                                                            <div class="detail_lent_date_time">
+                                                                <span>27 Сентябрь 2022</span>
+                                                                <span>12:19</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="detail_lent_bg">
+                                                    <div class="detail_lent_odd">
+                                                        <div class="detail_lent_titles">Хроника</div>
+                                                    </div>
+                                                    <div class="detail_lent_odd">
+                                                        <div class="detail_lent_textt">
+                                                            МИД Азербайджана: Армении необходимо прекратить имитацию переговоров, предпринять реальные, конструктивные шаги 
+                                                        </div>
+                                                        <div class="detail_lent_odd">
+                                                            <div class="detail_lent_date_time">
+                                                                <span>27 Сентябрь 2022</span>
+                                                                <span>12:19</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="detail_lent_bg">
+                                                    <div class="detail_lent_odd">
+                                                        <div class="detail_lent_titles">Хроника</div>
+                                                    </div>
+                                                    <div class="detail_lent_odd">
+                                                        <div class="detail_lent_textt">
+                                                            МИД Азербайджана: Армении необходимо прекратить имитацию переговоров, предпринять реальные, конструктивные шаги 
+                                                        </div>
+                                                        <div class="detail_lent_odd">
+                                                            <div class="detail_lent_date_time">
+                                                                <span>27 Сентябрь 2022</span>
+                                                                <span>12:19</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="detail_lent_bg">
+                                                    <div class="detail_lent_odd">
+                                                        <div class="detail_lent_titles">Хроника</div>
+                                                    </div>
+                                                    <div class="detail_lent_odd">
+                                                        <div class="detail_lent_textt">
+                                                            МИД Азербайджана: Армении необходимо прекратить имитацию переговоров, предпринять реальные, конструктивные шаги 
+                                                        </div>
+                                                        <div class="detail_lent_odd">
+                                                            <div class="detail_lent_date_time">
+                                                                <span>27 Сентябрь 2022</span>
+                                                                <span>12:19</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="detail_lent_bg">
+                                                    <div class="detail_lent_odd">
+                                                        <div class="detail_lent_titles">Хроника</div>
+                                                    </div>
+                                                    <div class="detail_lent_odd">
+                                                        <div class="detail_lent_textt">
+                                                            МИД Азербайджана: Армении необходимо прекратить имитацию переговоров, предпринять реальные, конструктивные шаги 
+                                                        </div>
+                                                        <div class="detail_lent_odd">
+                                                            <div class="detail_lent_date_time">
+                                                                <span>27 Сентябрь 2022</span>
+                                                                <span>12:19</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="detail_footer clear_fix">
+                                                <div class="bolee">
+                                                    <a href="#" class="more_bolee">
+                                                        <span>Более</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        <!-- Main Content End -->
+
+        <!-- Section Footer Start  -->
+            <footer class="footer clear_fix">
+                <div class="center">
+                    <div class="footer_full clear_fix">
+                        <div class="footer_top clear_fix">
+                            <div class="logo_sect clear_fix">
+                                <a href="https://www.youtube.com/" class="footer_logo">
+                                    <div class="logo_image"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ftr_social clear_fix">
+                            <div class="ftr_scl_items">
+                                <ul class="socials ftr_social_icons clear_fix">
+                                    <li>
+                                        <a href="" class="social_icon icon_fb">
+                                            <span class="scl_icon"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="social_icon icon_ins">
+                                            <span class="scl_icon"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="social_icon icon_teleg">
+                                            <span class="scl_icon"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="social_icon icon_yt">
+                                            
+                                            <span class="scl_icon"></span>
+                                            <span class="icon_yt_text">Социальная сеть:</span>
+                                        </a>
+                                    </li>   
+                                </ul>
+                                <ul class="social_lenta">
+                                    <li>
+                                        <a href="https://www.youtube.com/">
+                                            <img src="images/lentawhite.svg" alt="">
+                                            <p>Лента</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/">
+                                            <img src="images/printwhite.svg" alt="">
+                                            <p>Правила перепечатки</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/">
+                                            <img src="images/contactwhite.svg" alt="">
+                                            <p>Обратная связь</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="footer_content clear_fix">
+                                    Любое использование материалов допускается только при соблюдении правил перепечатки и при наличии гиперссылки на www.br.az. Новости, аналитика, прогнозы и другие материалы, представленные на данном сайте, не являются офертой или рекомендацией к покупке или продаже каких-либо активов.
+                                </div>
+                                <div class="copywrite">
+                                    <div class="copy_left">
+                                        <div class="copy_left_text">Все права защищены © 2022 «Бакинский рабочий»</div>
+                                    </div>
+                                    <div class="copy_right">
+                                        <a href="litpark.az" class="footer_create">
+                                            <div class="footer_create_title">Сайт по</div>
+                                            <div class="footer_create_icon">
+                                                <img src="images/smlogowhite.png" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        <!-- Section Footer End -->
+</div>
+    
+
+<script src="https://code.jquery.com/jquery-3.6.1.js"integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC 7pNI="crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        loop:true,
+        speed:2000,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            slideSpeed: 1700,
+            delay: 1300,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        });
+    </script>
+<script src="js/script.js"></script>
+</body>
+</html>
